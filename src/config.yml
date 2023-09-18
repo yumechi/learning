@@ -1,0 +1,30 @@
+review_version: 3.1
+bookname: 100Book-template
+language: ja
+booktitle: {name: "本のタイトル", file-as: "ホンノタイトル"}
+aut: []
+edt: おやかた
+pbl: 親方Project
+prt: K-9　https://www.k-k9.jp/
+date: 2023-12-31
+history: [["2023-12-31"]]
+rights: (C) 2023 親方Project
+description: 説明のための合同誌です
+subject: 本のタイトル説明
+type: ["技術書", "合同誌", ]
+debug: null
+stylesheet: ["style.css"]
+epubversion: 3
+htmlversion: 5
+toclevel: 3
+secnolevel: 3
+toc: true
+cover: null
+titlefile: chap-title.tex
+page_metric: B5
+direction: "ltr"
+epubmaker:
+  htmlext: xhtml
+texstyle: ["reviewmacro"]
+pdfmaker:
+  colophon: true
