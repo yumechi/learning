@@ -52,6 +52,19 @@
 
 
 　
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/FORTE.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        FORTE(フォルテ) https://twitter.com/FORTEgp05\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+Webアプリケーションのバックエンドエンジニアですが、いろいろやってます。Twitter、ブログ、Podcast配信、数多くの趣味と楽しく活動中。
+
+
 
 == 表紙イラスト・デザイン　
 //embed{
