@@ -8,6 +8,16 @@ jobs:
     runs-on: ubuntu-latest
     container: docker://vvakame/review:3.1
     steps:
+      - name: Install md2review gem
+        run: gem install md2review
+      - name: Convert MD to Re:VIEW
+        run: |
+          cd src
+          for file in *.md; do
+            md2review "$file" > "${file%.md}.re"
+          done
+      - name: Show review files
+        run: ls src/*.re
       - uses: actions/checkout@v3
       - name: Create PDF
         run: |
