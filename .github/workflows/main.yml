@@ -9,6 +9,12 @@ jobs:
     container: docker://vvakame/review:3.1
     steps:
       - uses: actions/checkout@v3
+      - name: Install md2review gem
+        run: gem install md2review
+      - name: Convert MD to Re:VIEW
+        run: |
+          sh convert-markdown.sh
+          ls src/*.re
       - name: Create PDF
         run: |
           cd src
