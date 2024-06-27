@@ -12,10 +12,9 @@ jobs:
       - name: Install md2review gem
         run: gem install md2review
       - name: Convert MD to Re:VIEW
-        run: sh convert-markdown.sh
-      - name: show review files
-        run: ls src/*.re
-      - run: cat src/ponyoxa1.re
+        run: |
+          sh convert-markdown.sh
+          ls src/*.re
       - name: Create PDF
         run: |
           cd src
