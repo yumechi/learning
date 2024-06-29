@@ -27,8 +27,9 @@ CHAPS:
 
 
   # 4部 勉強会・コミュニティ
-  #- chap-community-00-index.re:
-
+  - chap-community-00-index.re:
+      # 勉強会・コミュニティ関係いろいろ
+      - fumiyasac.re
 
   # 5部 その他
   #- chap-other-00-index.re:
