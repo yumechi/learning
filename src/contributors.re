@@ -65,7 +65,7 @@
 Webアプリケーションのバックエンドエンジニアですが、いろいろやってます。Twitter、ブログ、Podcast配信、数多くの趣味と楽しく活動中。
 
 
-
+　
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
