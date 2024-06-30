@@ -66,6 +66,20 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 
 
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/yuuki_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ゆーき @lizhi05853 https://x.com/lizhi05853\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+都内でJavaエンジニアをしています。雪香（せっか）という個人サークルで『見に行こう！ コンピュータ史料展示マップ〜関東編〜』という本も出しました。
+
+
+
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}
