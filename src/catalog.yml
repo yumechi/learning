@@ -30,6 +30,7 @@ CHAPS:
   - chap-community-00-index.re:
       # 勉強会・コミュニティ関係いろいろ
       - chap-fumiyasac.re
+      - chap-oyakata-learnig.re
 
   # 5部 その他
   #- chap-other-00-index.re:
