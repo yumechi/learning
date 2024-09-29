@@ -98,7 +98,7 @@ Webアプリケーションのバックエンドエンジニアですが、い�
         \includegraphics[width=.75\linewidth]{images/contributors/camomile_cafe.jpg}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
-        Camo @camomile_cafe https://x.com/camomile_cafe\\
+        Camo @camomile\_cafe https://x.com/camomile\_cafe\\
         \end{minipage}
     \hspace{1ex}
 //}
