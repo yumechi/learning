@@ -20,6 +20,7 @@ CHAPS:
       - yuuki-increase-study-time.re
       - tark.re
       - chap-oyakata-chatgpt.re
+      - chap-erukiti.re
 
 
   # 2部 友人
@@ -41,6 +42,7 @@ CHAPS:
   # 5部 その他
   - chap-other-00-index.re:
       - chap-camo.re
+      - chp-monthlyholiday.re
 
 POSTDEF:
   - postscript.re
