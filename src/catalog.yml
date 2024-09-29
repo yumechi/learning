@@ -39,7 +39,8 @@ CHAPS:
       - chap-oyakata-learning.re
 
   # 5部 その他
-  #- chap-other-00-index.re:
+  - chap-other-00-index.re:
+      - chap-camo.re
 
 POSTDEF:
   - postscript.re
