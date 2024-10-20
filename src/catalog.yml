@@ -45,6 +45,7 @@ CHAPS:
       - chap-camo.re
       - chap-monthlyholiday.re
       - chap-LTLive.re
+      - chap-hpmp.re
 
 POSTDEF:
   - postscript.re
