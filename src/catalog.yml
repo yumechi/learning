@@ -16,7 +16,7 @@ CHAPS:
       - Rhodium3.re
       # マークダウンファイルはGitHub Actionsで*.reに変換されます。
       # catalogには変換後のreファイルを記述してください。
-      - ponyoxa1.re
+      - ponyoxa1.md
       - yuuki-increase-study-time.re
       - tark.re
       - chap-oyakata-chatgpt.re
@@ -46,6 +46,7 @@ CHAPS:
       - chap-monthlyholiday.re
       - chap-LTLive.re
       - chap-hpmp.re
+      - chap-oyakata-connection.re
       - chap-kouno1.re
 
 POSTDEF:
