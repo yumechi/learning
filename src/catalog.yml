@@ -38,6 +38,7 @@ CHAPS:
       # 勉強会・コミュニティ関係いろいろ
       - chap-fumiyasac.re
       - chap-oyakata-learning.re
+      - chap-kouno2.re
 
 
   # 5部 その他
@@ -47,6 +48,7 @@ CHAPS:
       - chap-LTLive.re
       - chap-hpmp.re
       - chap-oyakata-connection.re
+      - chap-kouno1.re
 
 POSTDEF:
   - postscript.re
