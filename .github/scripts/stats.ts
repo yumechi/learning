@@ -1,11 +1,11 @@
 import { parse, stringify } from "jsr:@std/yaml";
 
 // YAMLファイルの`.re`ファイルをカウントする関数
-function countReFiles(data: unknown): number {
+function countChapters(data: unknown): number {
   if (Array.isArray(data)) {
-    return data.reduce((count, item) => count + countReFiles(item), 0);
+    return data.reduce((count, item) => count + countChapters(item), 0);
   } else if (typeof data === "object" && data !== null) {
-    return Object.values(data).reduce((count, value) => count + countReFiles(value), 0);
+    return Object.values(data).reduce((count, value) => count + countChapters(value), 0);
   } else if (typeof data === "string" && data.endsWith(".re")) {
     return 1;
   }
@@ -27,11 +27,11 @@ async function sendSlackNotification(webhookUrl: string, message: string) {
 }
 
 async function main(statsFile: string, yamlFile: string) {
-  // const webhookUrl = Deno.env.get("SLACK_WEBHOOK_URL");
-  // if (!webhookUrl) {
-  //   console.error("SLACK_WEBHOOK_URL is not set.");
-  //   Deno.exit(1);
-  // }
+  const webhookUrl = Deno.env.get("SLACK_WEBHOOK_URL");
+  if (!webhookUrl) {
+    console.error("SLACK_WEBHOOK_URL is not set.");
+    Deno.exit(1);
+  }
 
   // 前回のデータを読み込む
   let previousStats: { chapterCount: number } = { chapterCount: 0 };
@@ -45,22 +45,25 @@ async function main(statsFile: string, yamlFile: string) {
   // YAMLファイルから現在の`.re`ファイル数を取得
   const yamlText = await Deno.readTextFile(yamlFile);
   const yamlData = parse(yamlText);
-  const currentReFileCount = countReFiles(yamlData);
+  const currentChapterCount = countChapters(yamlData);
 
   console.log(`Previous .re file count: ${previousStats.chapterCount}`);
-  console.log(`Current .re file count: ${currentReFileCount}`);
+  console.log(`Current .re file count: ${currentChapterCount}`);
 
   // 比較と通知
-  if (currentReFileCount !== previousStats.chapterCount) {
-    const message = `.re file count has changed from ${previousStats.chapterCount} to ${currentReFileCount}.`;
+  if (currentChapterCount > previousStats.chapterCount) {
+    const diff = currentChapterCount - previousStats.chapterCount;
+    const message = `:tada: 『ワンストップ学び』現在${currentChapterCount}章（昨日より${diff}章増えました）
+https://github.com/onestop-techbook/learning
+    `
     console.log("Change detected. Sending notification...");
-    // await sendSlackNotification(webhookUrl, message);
+    await sendSlackNotification(webhookUrl, message);
   } else {
     console.log("No changes in .re file count.");
   }
 
   // 新しいデータを保存
-  const newStats = { ...previousStats, chapterCount: currentReFileCount };
+  const newStats = { ...previousStats, chapterCount: currentChapterCount };
   await Deno.writeTextFile(statsFile, JSON.stringify(newStats, null, 2));
   console.log("Updated stats saved.");
 }
