@@ -49,6 +49,7 @@ CHAPS:
       - chap-hpmp.re
       - chap-oyakata-connection.re
       - chap-kouno1.re
+      - chap-workflowtest.re
 
 POSTDEF:
   - postscript.re
