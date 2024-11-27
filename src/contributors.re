@@ -110,7 +110,7 @@ Webアプリケーションのバックエンドエンジニアですが、い�
         \includegraphics[width=.75\linewidth]{images/contributors/kouno_400x400_icon.jpg}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
-        こうの @hk_it7 https://twitter.com/hk_it7\\
+        こうの @hk\_it7 https://twitter.com/hk\_it7\\
         サークル名：世迷言ラボ
         \end{minipage}
     \hspace{1ex}
