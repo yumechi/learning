@@ -50,6 +50,7 @@ CHAPS:
       - chap-oyakata-connection.re
       - chap-kouno1.re
       - chap-workflowtest.re
+      - chap-workflowtest2.re
 
 POSTDEF:
   - postscript.re
