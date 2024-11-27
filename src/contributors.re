@@ -104,6 +104,18 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 フリーランスでフロントエンドエンジニアをしている外国人です。毎日完全燃焼したい気持ちで過ごしています。朝型人間で21時あたりには寝る生活をしています。
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/kouno_400x400_icon.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        こうの @hk_it7 https://twitter.com/hk_it7\\
+        サークル名：世迷言ラボ
+        \end{minipage}
+    \hspace{1ex}
+//}
+仕事はtoCサービスをRuby on Railsで作っている。エンジニアリングマネージャーらしい。東葛.devというコミュニティやってます。
 
 
 == 表紙イラスト・デザイン　
