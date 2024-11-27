@@ -1,4 +1,4 @@
-name: Count .re Files and Notify
+name: Notify chapter count
 
 on:
   schedule:

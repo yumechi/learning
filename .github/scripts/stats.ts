@@ -1,6 +1,6 @@
 import { parse, stringify } from "jsr:@std/yaml";
 
-// YAMLファイルの`.re`ファイルをカウントする関数
+// catalogファイルのチャプターをカウントする関数
 function countChapters(data: unknown): number {
   if (Array.isArray(data)) {
     return data.reduce((count, item) => count + countChapters(item), 0);
@@ -42,13 +42,13 @@ async function main(statsFile: string, yamlFile: string) {
     console.warn("No previous stats found, using defaults.");
   }
 
-  // YAMLファイルから現在の`.re`ファイル数を取得
+  // catalogファイルから現在のチャプター数を取得
   const yamlText = await Deno.readTextFile(yamlFile);
   const yamlData = parse(yamlText);
   const currentChapterCount = countChapters(yamlData);
 
-  console.log(`Previous .re file count: ${previousStats.chapterCount}`);
-  console.log(`Current .re file count: ${currentChapterCount}`);
+  console.log(`Previous chapter count: ${previousStats.chapterCount}`);
+  console.log(`Current chapter count: ${currentChapterCount}`);
 
   // 比較と通知
   if (currentChapterCount > previousStats.chapterCount) {
@@ -59,7 +59,7 @@ https://github.com/onestop-techbook/learning
     console.log("Change detected. Sending notification...");
     await sendSlackNotification(webhookUrl, message);
   } else {
-    console.log("No changes in .re file count.");
+    console.log("No increase in chapter count.");
   }
 
   // 新しいデータを保存
@@ -70,9 +70,9 @@ https://github.com/onestop-techbook/learning
 
 // スクリプトの引数からファイル名を取得
 if (Deno.args.length !== 2) {
-  console.error("Usage: deno run --allow-read --allow-env --allow-net stats.ts <statsFile> <yamlFile>");
+  console.error("Usage: deno run --allow-read --allow-env --allow-net stats.ts <statsFile> <catalogFile>");
   Deno.exit(1);
 }
 
-const [statsFile, yamlFile] = Deno.args;
-await main(statsFile, yamlFile);
+const [statsFile, catalogFile] = Deno.args;
+await main(statsFile, catalogFile);
