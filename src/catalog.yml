@@ -5,8 +5,6 @@ CHAPS:
   # 1部 仕事
   - chap-work-00-index.re:
       # 仕事関係いろいろ
-      - chap-test.re
-      - chap-test1.re
       - chap-forte.re
       - chap-forte2.re
       - chap-forte3.re
