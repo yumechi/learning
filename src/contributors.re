@@ -117,6 +117,17 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 仕事はtoCサービスをRuby on Railsで作っている。エンジニアリングマネージャーらしい。東葛.devというコミュニティやってます。
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ponyoxa_icon.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ぽにょ @ponyoxa https://twitter.com/ponyoxa
+        \end{minipage}
+    \hspace{1ex}
+//}
+主にバックエンドエンジニアをやってます。Joshi.ts という TypeScript の女性コミュニティを最近立ち上げました。
 
 == 表紙イラスト・デザイン　
 //embed{
