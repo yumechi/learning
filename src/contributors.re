@@ -24,7 +24,7 @@
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
-        \includegraphics[width=.75\linewidth]{images/contributors/i-kZmS-f_400x400.jpg}
+        \includegraphics[width=.75\linewidth]{images/contributors/oyakata.jpg}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
         親方 @oyakata2438 https://twitter.com/oyakata2438\\
@@ -52,6 +52,7 @@
 
 
 　
+
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
@@ -66,6 +67,7 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 
 
 　
+
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
@@ -78,21 +80,76 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 都内でJavaエンジニアをしています。雪香（せっか）という個人サークルで『見に行こう！ コンピュータ史料展示マップ〜関東編〜』という本も出しました。
 
+　
 
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/tark_icon.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ターク @tark\_ann https://twitter.com/tark\_ann\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+北の大地でiOSエンジニアをしています。カンファレンスのカメラマンスタッフをやったりコミュニティ活動もやっていたりします。
+
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/camomile_cafe.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        Camo @camomile\_cafe https://x.com/camomile\_cafe\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+フリーランスでフロントエンドエンジニアをしている外国人です。毎日完全燃焼したい気持ちで過ごしています。朝型人間で21時あたりには寝る生活をしています。
+
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/kouno_400x400_icon.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        こうの @hk\_it7 https://twitter.com/hk\_it7\\
+        サークル名：世迷言ラボ
+        \end{minipage}
+    \hspace{1ex}
+//}
+仕事はtoCサービスをRuby on Railsで作っている。エンジニアリングマネージャーらしい。東葛.devというコミュニティやってます。
+
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/ponyoxa_icon.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        ぽにょ @ponyoxa https://twitter.com/ponyoxa
+        \end{minipage}
+    \hspace{1ex}
+//}
+主にバックエンドエンジニアをやってます。Joshi.ts という TypeScript の女性コミュニティを最近立ち上げました。
 
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
-        \includegraphics[width=.75\linewidth]{images/contributors/llminatoll_400x400.jpg}
+        \includegraphics[width=.75\linewidth]{images/contributors/tokage.jpg}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
-        湊川あい @llminatoll https://twitter.com/llminatoll\\
-        サークル名：湊川あいの、わかば家。 https://note.com/llminatoll
+        トカゲ @Hiro\_Sauria https://twitter.com/Hiro\_Sauria\\
+        サークル名：冬眠ホタル
         \end{minipage}
     \hspace{1ex}
 //}
-湊川あいです。今回も表紙イラストを担当させていただきました。
+表紙イラスト・デザインを描かせていただきましたトカゲです。
 
 #@# この上に追記するといい感じになります。明示的な全角空白があるので、忘れずに。
 

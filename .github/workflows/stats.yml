@@ -1,0 +1,47 @@
+name: Notify chapter count
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  pull_request:
+
+jobs:
+  check-and-notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: 'Setup Deno'
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      # 前回のデータをキャッシュから復元
+      - name: Restore cache
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: stats_cache.json
+          key: daily_stats
+
+      - name: Initialize stats_cache.json if not restored
+        run: |
+          if [ ! -f stats_cache.json ]; then
+            echo '{"chapterCount": 0}' > stats_cache.json
+          fi
+
+      - name: Compare and Notify with Deno
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          deno run --allow-read --allow-write --allow-env --allow-net .github/scripts/stats.ts \
+            stats_cache.json src/catalog.yml
+
+      - name: Save cache
+        uses: actions/cache@v3
+        with:
+          path: stats_cache.json
+          key: daily_stats

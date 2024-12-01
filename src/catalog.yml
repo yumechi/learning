@@ -5,17 +5,21 @@ CHAPS:
   # 1部 仕事
   - chap-work-00-index.re:
       # 仕事関係いろいろ
-      - chap-test.re
-      - chap-test1.re
       - chap-forte.re
       - chap-forte2.re
+      - chap-forte3.re
+      - chap-forte4.re
       - Rhodium1.re
       - Rhodium2.re
       - Rhodium3.re
       # マークダウンファイルはGitHub Actionsで*.reに変換されます。
       # catalogには変換後のreファイルを記述してください。
-      - ponyoxa1.re
+      - ponyoxa1.md
       - yuuki-increase-study-time.re
+      - tark.re
+      - chap-oyakata-chatgpt.re
+      - chat-erukiti.md
+
 
   # 2部 友人
   #- chap-friend-00-index.re:
@@ -31,10 +35,22 @@ CHAPS:
   - chap-community-00-index.re:
       # 勉強会・コミュニティ関係いろいろ
       - chap-fumiyasac.re
-      - chap-oyakata-learnig.re
+      - chap-oyakata-learning.re
+      - chap-kouno2.re
+
 
   # 5部 その他
-  #- chap-other-00-index.re:
+  - chap-other-00-index.re:
+      - chap-camo.re
+      - chap-monthlyholiday.re
+      - chap-LTLive.re
+      - chap-hpmp.re
+      - chap-oyakata-connection.re
+      - chap-kouno1.re
+      - chap-tokage1.re
+      - chap-tokage2.re
+      - ponyoxa2.md
+      - ponyoxa3.md
 
 POSTDEF:
   - postscript.re
