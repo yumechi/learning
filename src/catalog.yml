@@ -3,18 +3,20 @@ PREDEF:
 
 CHAPS:
   # 1部 仕事
+  # マークダウンファイルはGitHub Actionsで*.reに変換されます。
+  # catalogには変換後のreファイルを記述してください。
   - chap-work-00-index.re:
       # 仕事関係いろいろ
       - chap-forte.re
       - chap-forte2.re
       - chap-forte3.re
       - chap-forte4.re
+      - chap-forte5.re
       - Rhodium1.re
       - Rhodium2.re
       - Rhodium3.re
-      # マークダウンファイルはGitHub Actionsで*.reに変換されます。
-      # catalogには変換後のreファイルを記述してください。
-      - ponyoxa1.md
+
+      - ponyoxa1.re
       - yuuki-increase-study-time.re
       - tark.re
       - chap-oyakata-chatgpt.re
@@ -49,9 +51,10 @@ CHAPS:
       - chap-kouno1.re
       - chap-tokage1.re
       - chap-tokage2.re
-      - ponyoxa2.md
-      - ponyoxa3.md
       - chap-yumechi.re
+      - ponyoxa2.re
+      - ponyoxa3.re
+      - chap-master.re
 
 POSTDEF:
   - postscript.re
