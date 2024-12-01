@@ -1,6 +1,6 @@
 = やる気に頼らず学ぶ、自分プログラミングという考え方
 
-//flushritht{
+//flushright{
 @ponyoxa
 //}
 
