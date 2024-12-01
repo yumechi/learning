@@ -19,7 +19,7 @@ CHAPS:
       - yuuki-increase-study-time.re
       - tark.re
       - chap-oyakata-chatgpt.re
-      - chat-erukiti.re
+      - chat-erukiti.md
 
 
   # 2部 友人
@@ -52,6 +52,7 @@ CHAPS:
       - chap-tokage2.re
       - ponyoxa2.re
       - ponyoxa3.re
+      - chap-master.md
 
 POSTDEF:
   - postscript.re
