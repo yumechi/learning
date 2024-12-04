@@ -21,7 +21,7 @@ jobs:
   check-and-notify:
     runs-on: ubuntu-latest
     needs: check-env
-    if: success() || needs.check-env.result == 'success'
+    if: needs.check-env.result == 'success'
 
     steps:
       - name: Checkout code
