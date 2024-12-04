@@ -8,6 +8,8 @@ on:
 jobs:
   check-and-notify:
     runs-on: ubuntu-latest
+    # SLACK_WEBHOOK_URL がセットされていない場合は実行しない
+    if: ${{ secrets.SLACK_WEBHOOK_URL != '' }}
 
     steps:
       - name: Checkout code
