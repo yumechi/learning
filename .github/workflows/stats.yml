@@ -11,15 +11,17 @@ jobs:
 
     steps:
       - name: Check SLACK_WEBHOOK_URL
+        continue-on-error: true
         run: |
           if [ -z "${{ secrets.SLACK_WEBHOOK_URL }}" ]; then
             echo "SLACK_WEBHOOK_URL is not set. Skipping the job."
-            exit 1
+            exit 0
           fi
 
   check-and-notify:
     runs-on: ubuntu-latest
     needs: check-env
+    if: success() || needs.check-env.result == 'success'
 
     steps:
       - name: Checkout code
