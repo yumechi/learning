@@ -12,12 +12,40 @@ function countChapters(data: unknown): number {
   return 0;
 }
 
+function buildMessage(prevCount: number, currentCount: number) {
+  const diff = currentCount - prevCount
+  const diffMessage = diff > 0 ? `（前日比 +${diff}）` : ''
+  return {
+    "blocks": [
+      {
+        "type": "context",
+        "elements": [
+          {
+            "type": "mrkdwn",
+            "text": `『<https://github.com/onestop-techbook/learning|ワンストップ学び>』の執筆状況: 現在 *${currentCount}* 章 ${diffMessage}`
+          }
+        ]
+      },
+      {
+        "type": "context",
+        "elements": [
+          {
+            "type": "plain_text",
+            "text": `${':page_with_curl:'.repeat(currentCount - diff)}${':new:'.repeat(diff)}`,
+            "emoji": true
+          }
+        ]
+      }
+    ]
+  }
+}
+
 // Slack通知を送信する関数
-async function sendSlackNotification(webhookUrl: string, message: string) {
+async function sendSlackNotification(webhookUrl: string, message: any) {
   const response = await fetch(webhookUrl, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text: message }),
+    body: JSON.stringify(message),
   });
 
   if (!response.ok) {
@@ -52,11 +80,8 @@ async function main(statsFile: string, yamlFile: string) {
 
   // 比較と通知
   if (currentChapterCount > previousStats.chapterCount) {
-    const diff = currentChapterCount - previousStats.chapterCount;
-    const message = `:tada: 『ワンストップ学び』現在${currentChapterCount}章（昨日より${diff}章増えました）
-https://github.com/onestop-techbook/learning
-    `
     console.log("Change detected. Sending notification...");
+    const message = buildMessage(previousStats.chapterCount, currentChapterCount)
     await sendSlackNotification(webhookUrl, message);
   } else {
     console.log("No increase in chapter count.");
@@ -64,7 +89,7 @@ https://github.com/onestop-techbook/learning
 
   // 新しいデータを保存
   const newStats = { ...previousStats, chapterCount: currentChapterCount };
-  await Deno.writeTextFile(statsFile, JSON.stringify(newStats, null, 2));
+  // await Deno.writeTextFile(statsFile, JSON.stringify(newStats, null, 2));
   console.log("Updated stats saved.");
 }
 
