@@ -153,6 +153,20 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 のんびりPythonのソフトウェアエンジニアやってます。たまに焼肉のために本気を出して同人誌を書くこともあります。このアイコンは技術書典のサークル画像として設定しているものです。本当はゲームばっかりしていたいです。
 
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mottox2.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        もっと @mottox2 https://twitter.com/mottox2
+        \end{minipage}
+    \hspace{1ex}
+//}
+執筆をサポート仕組みを作る多くなってきたソフトウェアデザイナーです。
+
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}
