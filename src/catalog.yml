@@ -61,6 +61,7 @@ CHAPS:
       - ponyoxa2.re
       - ponyoxa3.re
       - chap-master.re
+      - chap-mottox2.re
 
 POSTDEF:
   - postscript.re
