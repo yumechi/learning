@@ -5,16 +5,19 @@ on:
     - cron: '0 9 * * *'
   workflow_dispatch:
 
-env:
-  SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
 jobs:
   check-and-notify:
     runs-on: ubuntu-latest
-    # SLACK_WEBHOOK_URL がセットされていない場合は実行しない
-    if: ${{ env.SLACK_WEBHOOK_URL != '' }}
 
     steps:
+      # SLACK_WEBHOOK_URLが設定されていない場合はスキップ
+      - name: Check SLACK_WEBHOOK_URL
+        run: |
+          if [ -z "${{ secrets.SLACK_WEBHOOK_URL }}" ]; then
+            echo "SLACK_WEBHOOK_URL is not set. Skipping the job."
+            exit 0
+          fi
+
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -38,8 +41,8 @@ jobs:
           fi
 
       - name: Compare and Notify with Deno
-        with:
-          SLACK_WEBHOOK_URL: ${{ env.SLACK_WEBHOOK_URL }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
           deno run --allow-read --allow-write --allow-env --allow-net .github/scripts/stats.ts \
             stats_cache.json src/catalog.yml
