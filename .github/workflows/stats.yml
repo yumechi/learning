@@ -38,9 +38,3 @@ jobs:
         run: |
           deno run --allow-read --allow-write --allow-env --allow-net .github/scripts/stats.ts \
             stats_cache.json src/catalog.yml
-
-      - name: Save cache
-        uses: actions/cache@v3
-        with:
-          path: stats_cache.json
-          key: daily_stats
