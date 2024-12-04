@@ -89,7 +89,7 @@ async function main(statsFile: string, yamlFile: string) {
 
   // 新しいデータを保存
   const newStats = { ...previousStats, chapterCount: currentChapterCount };
-  // await Deno.writeTextFile(statsFile, JSON.stringify(newStats, null, 2));
+  await Deno.writeTextFile(statsFile, JSON.stringify(newStats, null, 2));
   console.log("Updated stats saved.");
 }
 
