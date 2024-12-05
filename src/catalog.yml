@@ -62,6 +62,8 @@ CHAPS:
       - ponyoxa3.re
       - chap-master.re
       - chap-mottox2.re
+      - chap-finance_and_learn.re
+      - chap-ditflame-01-tradeoff.re
 
 POSTDEF:
   - postscript.re
