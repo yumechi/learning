@@ -22,7 +22,7 @@ function buildMessage(prevCount: number, currentCount: number) {
         "elements": [
           {
             "type": "mrkdwn",
-            "text": `『<https://github.com/onestop-techbook/learning|ワンストップ学び>』の執筆状況: 現在 *${currentCount}* 章 ${diffMessage}`
+            "text": `『<https://github.com/onestop-techbook/learning|ワンストップ学び>』の執筆状況: 現在 *${currentCount}* 章 ${diffMessage} :books: <https://oyakata-techbook.slack.com/canvas/CDS3UGG75|執筆の手引き>`
           }
         ]
       },
