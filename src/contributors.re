@@ -167,6 +167,21 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 最近は執筆をよりサポートの仕組みを作る多くなってきたソフトウェアデザイナーです。
 
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/MzRyuKa_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        みずりゅ @MzRyuKa https://twitter.com/mzryuka\\
+        \end{minipage}
+    \hspace{1ex}
+//}
+のんびりごろごろ、ネコ、うさまる、ときメモ、技術の話は大好きです。サークルURAMASUで技術同人誌を頒布しています。
+最近のお気に入り言語はElixirとGleamです。
+
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}

@@ -71,6 +71,7 @@ CHAPS:
       - chap-finance_and_learn.re
       - chap-ditflame-01-tradeoff.re
       - chap-license.re
+      - chap-mzryuka.re
 
 POSTDEF:
   - postscript.re
