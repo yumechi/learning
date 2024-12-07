@@ -20,7 +20,15 @@ CHAPS:
       - yuuki-increase-study-time.re
       - tark.re
       - chap-oyakata-chatgpt.re
-      - chat-erukiti.md
+
+      - chap-yuusukesan.re
+
+      # 場所ここでいい？
+      - chap-erukiti1.re
+      - chap-erukiti2.re
+      - chap-erukiti3.re
+      - chap-erukiti4.re
+      - chap-erukiti5.re
 
 
   # 2部 友人
@@ -39,6 +47,8 @@ CHAPS:
       - chap-fumiyasac.re
       - chap-oyakata-learning.re
       - chap-kouno2.re
+      - chap-writingWidebook.re
+      - chap-yuusukesan.re
 
 
   # 5部 その他
@@ -48,13 +58,19 @@ CHAPS:
       - chap-LTLive.re
       - chap-hpmp.re
       - chap-oyakata-connection.re
+      - chap-kouno3.re
       - chap-kouno1.re
       - chap-tokage1.re
       - chap-tokage2.re
-      - chap-yumechi.re
+      - chap-yumechi-1.re
+      - chap-yumechi-2.re
       - ponyoxa2.re
       - ponyoxa3.re
       - chap-master.re
+      - chap-mottox2.re
+      - chap-finance_and_learn.re
+      - chap-ditflame-01-tradeoff.re
+      - chap-license.re
 
 POSTDEF:
   - postscript.re

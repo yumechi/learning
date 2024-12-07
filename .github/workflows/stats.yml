@@ -2,12 +2,32 @@ name: Notify chapter count
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 9 * * *'
   workflow_dispatch:
 
 jobs:
+  check-env:
+    runs-on: ubuntu-latest
+
+    outputs:
+      slack_webhook_set: ${{ steps.check-slack-webhook.outputs.slack_webhook_set }}
+
+    steps:
+      - name: Check SLACK_WEBHOOK_URL
+        id: check-slack-webhook
+        run: |
+          if [ -z "${{ secrets.SLACK_WEBHOOK_URL }}" ]; then
+            echo "SLACK_WEBHOOK_URL is not set. Skipping the job."
+            echo "slack_webhook_set=false" >> $GITHUB_OUTPUT
+            exit 0
+          else
+            echo "slack_webhook_set=true" >> $GITHUB_OUTPUT
+          fi
+
   check-and-notify:
     runs-on: ubuntu-latest
+    needs: check-env
+    if: needs.check-env.outputs.slack_webhook_set == 'true'
 
     steps:
       - name: Checkout code
@@ -38,9 +58,3 @@ jobs:
         run: |
           deno run --allow-read --allow-write --allow-env --allow-net .github/scripts/stats.ts \
             stats_cache.json src/catalog.yml
-
-      - name: Save cache
-        uses: actions/cache@v3
-        with:
-          path: stats_cache.json
-          key: daily_stats

@@ -158,6 +158,18 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //embed{
     \begin{minipage}{.1\linewidth}
         \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/mottox2.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        もっと @mottox2 https://twitter.com/mottox2
+        \end{minipage}
+    \hspace{1ex}
+//}
+最近は執筆をよりサポートの仕組みを作る多くなってきたソフトウェアデザイナーです。
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
         \includegraphics[width=.75\linewidth]{images/contributors/MzRyuKa_400x400.jpg}
     \end{minipage}
     \begin{minipage}{.89\linewidth}
@@ -180,7 +192,12 @@ Webアプリケーションのバックエンドエンジニアですが、い�
         \end{minipage}
     \hspace{1ex}
 //}
-表紙イラスト・デザインを描かせていただきましたトカゲです。
+トカゲです。
+
+表紙デザインだけでなく、本文にもお誘いただき恐縮です！
+
+最近はワンストップちゃんが親戚の子供のような気持ちで描けるようになってきました。
+本文掲載の表紙作成秘話で表紙のこだわりについて語ったので、よかったらご一読ください。
 
 #@# この上に追記するといい感じになります。明示的な全角空白があるので、忘れずに。
 
