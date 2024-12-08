@@ -72,6 +72,8 @@ CHAPS:
       - chap-ditflame-01-tradeoff.re
       - chap-license.re
       - chap-mzryuka.re
+      
+      - chap-uutan.re
 
 POSTDEF:
   - postscript.re
