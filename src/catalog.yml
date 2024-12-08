@@ -23,6 +23,8 @@ CHAPS:
 
       - chap-yuusukesan.re
 
+      - chap-gomanatsu.re
+
       # 場所ここでいい？
       - chap-erukiti1.re
       - chap-erukiti2.re
@@ -77,7 +79,7 @@ CHAPS:
       - chap-oyakata-project.re
       - chap-uutan.re
       - chap-cognition.re
-      - chap-nabekura-2mmlearning,re
+      - chap-nabekura-2mmlearning.re
 
 POSTDEF:
   - postscript.re
