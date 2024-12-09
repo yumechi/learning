@@ -14,7 +14,7 @@ function countChapters(data: unknown): number {
 
 function buildMessage(prevCount: number, currentCount: number) {
   const diff = currentCount - prevCount
-  const diffMessage = diff > 0 ? `（前日比 +${diff}）` : ''
+  const diffMessage = diff > 0 ? `（計測開始日比 +${diff}）` : ''
   return {
     "blocks": [
       {
