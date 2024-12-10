@@ -182,6 +182,21 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 のんびりごろごろ、ネコ、うさまる、ときメモ、技術の話は大好きです。サークルURAMASUで技術同人誌を頒布しています。
 最近のお気に入り言語はElixirとGleamです。
 
+　
+
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/erukiti_400x400.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+        えるきち @erukiti https://twitter.com/erukiti\\
+        サークル名：東京ラビットハウス https://rabbit-house.tokyo/
+        \end{minipage}
+    \hspace{1ex}
+//}
+2023年春にフロントエンドエンジニアからAIエンジニアに転向しました。好きなものとそうじゃないもので濃淡が激しすぎると評判（？）です。自分のサークルではここ数年、本を出せてない。
+
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}
