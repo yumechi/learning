@@ -80,6 +80,7 @@ CHAPS:
       - chap-uutan.re
       - chap-cognition.re
       - chap-nabekura-2mmlearning.re
+      - Rhodium4.re
 
 POSTDEF:
   - postscript.re
