@@ -14,8 +14,8 @@
 
 日本の特許は、年間30万件程度出願されており@<fn>{count1}、登録になるのは24万件程度@<fn>{count2}です。
 
-//footnote[count1][特許行政年次報告書2023年度版をとりまとめました　https://www.jpo.go.jp/resources/report/nenji/2023/matome.html]
-//footnote[count2][国内外の出願・登録状況と審査・審判の現状　https://www.jpo.go.jp/resources/report/nenji/2024/document/index/0101.pdf]
+//footnote[count1][特許行政年次報告書2023年度版 https://www.jpo.go.jp/resources/report/nenji/2023/matome.html をとりまとめました]
+//footnote[count2][https://www.jpo.go.jp/resources/report/nenji/2024/document/index/0101.pdf 国内外の出願・登録状況と審査・審判の現状]
 
 この数を見て、「案外多いな」と思いませんでしたか？
 

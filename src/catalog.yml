@@ -52,8 +52,6 @@ CHAPS:
       - chap-oyakata-learning.re
       - chap-kouno2.re
       - chap-writingWidebook.re
-      - chap-yuusukesan.re
-
 
   # 5部 その他
   - chap-other-00-index.re:
@@ -74,6 +72,11 @@ CHAPS:
       - chap-mottox2.re
       - chap-finance_and_learn.re
       - chap-ditflame-01-tradeoff.re
+      - chap-ditflame-02-qualify-steps.re
+      - chap-ditflame-03-qualify-steps-ipa.re
+      - chap-ditflame-04-opened-vs-closed.re
+      - chap-ditflame-05-listen-learning.re
+      - chap-ditflame-06-iterative-challenge.re
       - chap-license.re
       - chap-mzryuka.re
       - chap-oyakata-project.re
