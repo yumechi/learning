@@ -78,13 +78,13 @@ CHAPS:
       - chap-ditflame-03-qualify-steps-ipa.re
       - chap-ditflame-04-opened-vs-closed.re
       - chap-ditflame-05-listen-learning.re
+      - chap-ditflame-06-iterative-challenge.re
       - chap-license.re
       - chap-mzryuka.re
       - chap-oyakata-project.re
       - chap-uutan.re
       - chap-cognition.re
       - chap-nabekura-2mmlearning.re
-      - Rhodium4.re
 
 POSTDEF:
   - postscript.re
