@@ -51,13 +51,13 @@ CHAPS:
       - chap-fumiyasac.re
       - chap-oyakata-learning.re
       - chap-kouno2.re
-      - chap-writingWidebook.re      
-	  - chap-LTLive.re
+      - chap-writingWidebook.re
 
-  # 5部 実体験・生活を豊かにする学び
+  # 5部 その他
   - chap-other-00-index.re:
       - chap-camo.re
       - chap-monthlyholiday.re
+      - chap-LTLive.re
       - chap-hpmp.re
       - chap-oyakata-connection.re
       - chap-kouno3.re
