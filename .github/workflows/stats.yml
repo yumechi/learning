@@ -36,18 +36,26 @@ jobs:
         with:
           deno-version: v2.x
 
+      - name: Calculate Days
+        id: date
+        run: |
+          YESTERDAY=$(date -d "yesterday" +%Y-%m-%d)
+          TODAY=$(date +%Y-%m-%d)
+          echo "yesterday=$YESTERDAY" >> $GITHUB_ENV
+          echo "today=$TODAY" >> $GITHUB_ENV
+
       # 前回のデータをキャッシュから復元
       - name: Restore cache
         uses: actions/cache@v3
-        id: cache
+        id: cache-yesterday
         with:
           path: stats_cache.json
-          key: daily_stats
+          key: daily-stats-${{ env.yesterday }}
 
       - name: Initialize stats_cache.json if not restored
         run: |
           if [ ! -f stats_cache.json ]; then
-            echo '{"chapterCount": 0}' > stats_cache.json
+            echo '{"chapterCount": 52}' > stats_cache.json
           fi
 
       - name: Compare and Notify with Deno
@@ -56,3 +64,11 @@ jobs:
         run: |
           deno run --allow-read --allow-write --allow-env --allow-net .github/scripts/stats.ts \
             stats_cache.json src/catalog.yml
+
+      - name: Store cache
+        uses: actions/cache@v3
+        id: cache-today
+        with:
+          path: stats_cache.json
+          key: daily-stats-${{ env.today }}
+
