@@ -83,6 +83,7 @@ CHAPS:
       - chap-uutan.re
       - chap-cognition.re
       - chap-nabekura-2mmlearning.re
+      - chap-fumiyasac-note.re
 
 POSTDEF:
   - postscript.re
