@@ -84,6 +84,8 @@ CHAPS:
       - chap-cognition.re
       - chap-nabekura-2mmlearning.re
       - chap-fumiyasac-note.re
+      - chap-elementary.re
+      - chap-sports.re
 
 POSTDEF:
   - postscript.re
