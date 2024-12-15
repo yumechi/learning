@@ -42,6 +42,7 @@ CHAPS:
 
   # 4部 勉強会・コミュニティ
   - chap-community-00-index.re:
+      - chap-toya.re
       - chap-fumiyasac.re
       - chap-kouno2.re
       - chap-writingWidebook.re
