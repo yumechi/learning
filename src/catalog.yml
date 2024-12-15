@@ -10,82 +10,76 @@ CHAPS:
       - chap-forte.re
       - chap-forte2.re
       - chap-forte3.re
-      - chap-forte4.re
-      - chap-forte5.re
+      - chap-patent.re
+      - chap-tshape.re
+
+
+  # 2部 学校での学び
+  - chap-school-00-index.re:
       - Rhodium1.re
       - Rhodium2.re
-      - Rhodium3.re
+      - chap-yuusukesan.re
+      - chap-elementary.re
+      - chap-sports.re
+      - chap-kouno3.re
+      - chap-master.re
+      - chap-ditflame-01-tradeoff.re
 
+
+  # 3部 学びの体験談
+  - chap-experience-00-index.re:
+
+      - chap-forte4.re
+      - Rhodium3.re
+      - chap-camo.re
+      - chap-oyakata-connection.re
+      - chap-yumechi-1.re
+      - chap-yumechi-2.re
+      - ponyoxa2.re
+      - ponyoxa3.re
+      - chap-mzryuka.re
+
+
+  # 4部 勉強会・コミュニティ
+  - chap-community-00-index.re:
+      - chap-fumiyasac.re
+      - chap-kouno2.re
+      - chap-writingWidebook.re
+      - chap-gomanatsu.re
+      - chap-LTLive.re
+      - chap-tokage1.re
+      - chap-tokage2.re
+      - chap-mottox2.re
+      - chap-ditflame-04-opened-vs-closed.re
+      - chap-uutan.re
+
+
+  # 5部 学びのTips
+  - chap-tips-00-index.re:
+      - chap-forte5.re
       - ponyoxa1.re
       - yuuki-increase-study-time.re
       - tark.re
       - chap-oyakata-chatgpt.re
-
-      - chap-yuusukesan.re
-
-      - chap-gomanatsu.re
-
-      # 場所ここでいい？
       - chap-erukiti1.re
       - chap-erukiti2.re
       - chap-erukiti3.re
       - chap-erukiti4.re
       - chap-erukiti5.re
-      - chap-tshape.re
-      - chap-patent.re
-
-
-  # 2部 友人
-  #- chap-friend-00-index.re:
-      # 友人関係いろいろ
-
-
-  # 3部 家族
-  #- chap-family-00-index.re:
-      # 家族関係いろいろ
-
-
-  # 4部 勉強会・コミュニティ
-  - chap-community-00-index.re:
-      # 勉強会・コミュニティ関係いろいろ
-      - chap-fumiyasac.re
-      - chap-oyakata-learning.re
-      - chap-kouno2.re
-      - chap-writingWidebook.re
-
-  # 5部 その他
-  - chap-other-00-index.re:
-      - chap-camo.re
       - chap-monthlyholiday.re
-      - chap-LTLive.re
       - chap-hpmp.re
-      - chap-oyakata-connection.re
-      - chap-kouno3.re
       - chap-kouno1.re
-      - chap-tokage1.re
-      - chap-tokage2.re
-      - chap-yumechi-1.re
-      - chap-yumechi-2.re
-      - ponyoxa2.re
-      - ponyoxa3.re
-      - chap-master.re
-      - chap-mottox2.re
       - chap-finance_and_learn.re
-      - chap-ditflame-01-tradeoff.re
       - chap-ditflame-02-qualify-steps.re
       - chap-ditflame-03-qualify-steps-ipa.re
-      - chap-ditflame-04-opened-vs-closed.re
       - chap-ditflame-05-listen-learning.re
       - chap-ditflame-06-iterative-challenge.re
-      - chap-license.re
-      - chap-mzryuka.re
-      - chap-oyakata-project.re
-      - chap-uutan.re
-      - chap-cognition.re
-      - chap-nabekura-2mmlearning.re
       - chap-fumiyasac-note.re
-      - chap-elementary.re
-      - chap-sports.re
+      - chap-cognition.re
+      - chap-license.re
+      - chap-oyakata-project.re
+      - chap-nabekura-2mmlearning.re
+      - chap-oyakata-learning.re
 
 POSTDEF:
   - postscript.re
