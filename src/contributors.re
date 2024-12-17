@@ -197,6 +197,20 @@ Webアプリケーションのバックエンドエンジニアですが、い�
 //}
 2023年春にフロントエンドエンジニアからAIエンジニアに転向しました。好きなものとそうじゃないもので濃淡が激しすぎると評判（？）です。自分のサークルではここ数年、本を出せてない。
 
+　
+//embed{
+    \begin{minipage}{.1\linewidth}
+        \centering
+        \includegraphics[width=.75\linewidth]{images/contributors/toya.jpg}
+    \end{minipage}
+    \begin{minipage}{.89\linewidth}
+		toya @toya https://x.com/toya
+        \end{minipage}
+    \hspace{1ex}
+//}
+
+技術や技術コミュニティやエンジニアの話が好きな、エンジニアじゃない人。文章を読んだり書いたりするのも好きです。
+
 == 表紙イラスト・デザイン　
 //embed{
     \begin{minipage}{.1\linewidth}
