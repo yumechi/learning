@@ -2,6 +2,34 @@ PREDEF:
   - preface.re
 
 CHAPS:
+  # 5部 学びのTips
+  - chap-tips-00-index.re:
+      - chap-erukiti1.re
+      - chap-erukiti2.re
+      - chap-erukiti3.re
+      - chap-erukiti4.re
+      - chap-erukiti5.re      
+      - chap-forte5.re
+      - ponyoxa1.re
+      - yuuki-increase-study-time.re
+      - tark.re
+      - chap-cognition.re
+      - chap-oyakata-chatgpt.re
+      - chap-monthlyholiday.re
+      - chap-hpmp.re
+      - chap-kouno1.re
+      - chap-finance_and_learn.re
+      - chap-ditflame-02-qualify-steps.re
+      - chap-ditflame-03-qualify-steps-ipa.re
+      - chap-ditflame-05-listen-learning.re
+      - chap-ditflame-06-iterative-challenge.re
+      - chap-ditflame-07-art-exhibition-catalogue.re
+      - chap-fumiyasac-note.re
+      - chap-license.re
+      - chap-oyakata-project.re
+      - chap-nabekura-2mmlearning.re
+      - chap-oyakata-learning.re
+
   # 1部 仕事
   # マークダウンファイルはGitHub Actionsで*.reに変換されます。
   # catalogには変換後のreファイルを記述してください。
@@ -19,30 +47,32 @@ CHAPS:
       - Rhodium1.re
       - Rhodium2.re
       - chap-yuusukesan.re
+      - chap-ditflame-01-tradeoff.re
+      - chap-master.re
       - chap-elementary.re
       - chap-sports.re
       - chap-kouno3.re
-      - chap-master.re
-      - chap-ditflame-01-tradeoff.re
+
 
 
   # 3部 学びの体験談
   - chap-experience-00-index.re:
-
-      - chap-forte4.re
+      - chap-yumechi-1.re      
       - Rhodium3.re
       - chap-camo.re
-      - chap-oyakata-connection.re
-      - chap-yumechi-1.re
       - chap-yumechi-2.re
       - ponyoxa2.re
       - ponyoxa3.re
       - chap-mzryuka.re
+      - chap-forte4.re
+      - chap-oyakata-connection.re
 
 
   # 4部 勉強会・コミュニティ
   - chap-community-00-index.re:
+      - chap-uutan.re      
       - chap-toya.re
+      - chap-ditflame-04-opened-vs-closed.re
       - chap-fumiyasac.re
       - chap-kouno2.re
       - chap-writingWidebook.re
@@ -51,37 +81,10 @@ CHAPS:
       - chap-tokage1.re
       - chap-tokage2.re
       - chap-mottox2.re
-      - chap-ditflame-04-opened-vs-closed.re
-      - chap-uutan.re
 
 
-  # 5部 学びのTips
-  - chap-tips-00-index.re:
-      - chap-forte5.re
-      - ponyoxa1.re
-      - yuuki-increase-study-time.re
-      - tark.re
-      - chap-oyakata-chatgpt.re
-      - chap-erukiti1.re
-      - chap-erukiti2.re
-      - chap-erukiti3.re
-      - chap-erukiti4.re
-      - chap-erukiti5.re
-      - chap-monthlyholiday.re
-      - chap-hpmp.re
-      - chap-kouno1.re
-      - chap-finance_and_learn.re
-      - chap-ditflame-02-qualify-steps.re
-      - chap-ditflame-03-qualify-steps-ipa.re
-      - chap-ditflame-05-listen-learning.re
-      - chap-ditflame-06-iterative-challenge.re
-      - chap-ditflame-07-art-exhibition-catalogue.re
-      - chap-fumiyasac-note.re
-      - chap-cognition.re
-      - chap-license.re
-      - chap-oyakata-project.re
-      - chap-nabekura-2mmlearning.re
-      - chap-oyakata-learning.re
+
+
 
 POSTDEF:
   - postscript.re

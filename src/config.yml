@@ -1,14 +1,14 @@
 review_version: 3.1
-bookname: 100Book-template
+bookname: Onestop-learning
 language: ja
-booktitle: {name: "本のタイトル", file-as: "ホンノタイトル"}
+booktitle: {name: "ワンストップ学び", file-as: "ワンストップ学び"}
 aut: []
 edt: おやかた
 pbl: 親方Project
 prt: K-9　https://www.k-k9.jp/
-date: 2023-12-31
-history: [["2023-12-31"]]
-rights: (C) 2023 親方Project
+date: 2024-12-30
+history: [["2024-12-30"]]
+rights: (C) 2024 親方Project
 description: 説明のための合同誌です
 subject: 本のタイトル説明
 type: ["技術書", "合同誌", ]
